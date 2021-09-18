@@ -1,6 +1,7 @@
 //Proyecto picas y fijas
-//YO LO PUEDO EDITAR: JOEL 
-//SIUUUU PUEDO EDITAR BARRAS!!
+#include<iostream>
+#include<stdlib.h>
+#include<cstdlib>
 using namespace std;
 
 int main ()
