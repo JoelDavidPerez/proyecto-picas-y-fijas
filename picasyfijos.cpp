@@ -5,7 +5,8 @@
 using namespace std;
 
 int main(){
-	
+	//añadir los carácteres especiales 
+	setlocale(LC_ALL, "spanish");
 	//portada
 	cout<<"PICAS Y FIJAS"<<ENDL;
 	//cout<<"Tienes la habilidad para completarlo?\nPresiona __ para continuar"  //buscar como poner botones en c++
