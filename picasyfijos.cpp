@@ -23,4 +23,17 @@ int main(){
 		numeroAleatorio[i]=rand()%9;
 		cout<<numeroAleatorio[i];
 	}
+	
+	int numeroIngresado[4];
+	
+	cout<<"Ingresa tu numero";
+	cin>>numeroIngresado;
+	for(int i=0; i<4; i++){
+		numeroIngresado[i];
+		cout<<numeroIngresado[i];
+	}
+	
+	
+	
+	
 }
