@@ -1,7 +1,8 @@
 //Proyecto picas y fijas
-#include<iostream>
-#include<stdlib.h>
-#include<cstdlib>
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+
 using namespace std;
 
 int main(){
