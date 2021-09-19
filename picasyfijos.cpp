@@ -39,7 +39,7 @@ int main(){
 	}
 	
 	//Volver a pedir número si el número que se ingreso no es igual al número aleatorio >.<
-	if(numeroIngresadoCompleto[4]!=numeroAleatorio[4])
+	if(numeroIngresadoCompleto[1]!=numeroAleatorio[1])
 		{
 			cout<<"ingresa de nuevo"<<endl;
 			for(int i=0; i<4; i++){
