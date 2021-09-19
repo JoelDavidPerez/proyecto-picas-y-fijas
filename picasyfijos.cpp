@@ -10,7 +10,7 @@ int main(){
 	setlocale(LC_ALL, "spanish");
 	
 	//portada
-	cout<<"PICAS Y FIJAS"<<ENDL;
+	cout<<"PICAS Y FIJAS"<<endl;
 	//cout<<"Tienes la habilidad para completarlo?\nPresiona __ para continuar"  //buscar como poner botones en c++
 	
 	//Instrucciones
