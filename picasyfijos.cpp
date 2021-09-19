@@ -5,8 +5,10 @@
 using namespace std;
 
 int main(){
+	
 	//añadir los carácteres especiales 
 	setlocale(LC_ALL, "spanish");
+	
 	//portada
 	cout<<"PICAS Y FIJAS"<<ENDL;
 	//cout<<"Tienes la habilidad para completarlo?\nPresiona __ para continuar"  //buscar como poner botones en c++
@@ -24,13 +26,20 @@ int main(){
 		cout<<numeroAleatorio[i];
 	}
 	
-	int numeroIngresado[4];
+	cout<<"\n";
 	
-	cout<<"Ingresa tu numero";
-	cin>>numeroIngresado;
+	//ingresa el numero
+	int numeroIngresadoCompleto[4];
+	int numero;
+	
 	for(int i=0; i<4; i++){
-		numeroIngresado[i];
-		cout<<numeroIngresado[i];
+		cin>>numero;
+		numeroIngresadoCompleto[i]=numero;
+	}
+	
+	//imprime numero ingresado
+	for(int i=0; i<4; i++){
+		cout<<numeroIngresadoCompleto[i];
 	}
 	
 	
