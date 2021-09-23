@@ -1,59 +1,84 @@
-//Proyecto picas y fijas
 #include <iostream>
 #include <stdlib.h>
+#include <conio.h>
+#include <iomanip>
 #include <time.h>
 
 using namespace std;
 
+int determinarPica(int num, int pos, int numero[]){
+    int devuelve=0;
+    for(int i=0; i<4; i++){
+        if(num==numero[i] && pos!=(i+1)){
+            devuelve=1;
+            break;
+        }
+    }
+    return devuelve;
+}
+
 int main(){
-	
-	//añadir los carácteres especiales 
-	setlocale(LC_ALL, "spanish");
-	
-	//portada
-	cout<<"PICAS Y FIJAS"<<endl;
-	//cout<<"Tienes la habilidad para completarlo?\nPresiona __ para continuar"  //buscar como poner botones en c++
-	
-	//Instrucciones
-	cout<<"Instrucciones";
-	cout<<"~Un juego muy conocido es picas y fijas~\n\nconsiste en tratar de adivinar un número en la menor cantidad de intentos.\nEn cada intento, el jugador dice 4 dígitos (no repetidos) y el oponente le da pistas de cuántos aciertos tuvo, sin indicarle cuales fueron, de la siguiente forma:\n Si algún dígito que dice el jugador se encuentra dentro del número a adivinar, pero no está en la posición correcta, se llama PICA.\n Si el dígito se encuentra en la posición adecuada, se llama FIJA.\n Así, las pistas serán la cantidad de PICAS y la cantidad de FIJAS que se tienen.\n El juego termina cuando algún jugador tiene 4 FIJAS (4 dígitos en el orden adecuado).";
-	
-	//genera numero al azar 
-	srand(time(NULL));
-	int numeroAleatorio[4];
-	
-	for(int i=0; i<4; i++){
-		numeroAleatorio[i]=rand()%9;
-		cout<<numeroAleatorio[i];
-	}
-	
-	cout<<"\n";
-	
-	//ingresa el numero
-	int numeroIngresadoCompleto[4];
-	int numero;
-	
-	for(int i=0; i<4; i++){
-		cin>>numero;
-		numeroIngresadoCompleto[i]=numero;
-	}
-	
-	//Volver a pedir número si el número que se ingreso no es igual al número aleatorio >.<
-	for(int i=0;numeroIngresadoCompleto[i]!=numeroAleatorio[i];i++)
-		{
-			cout<<"ingresa de nuevo"<<endl;
-			for(int i=0; i<4; i++){
-			cin>>numero;
-			numeroIngresadoCompleto[i]=numero;
-			}
-		}
-	
-	//imprime numero ingresado
-	for(int i=0; i<4; i++){
-		cout<<numeroIngresadoCompleto[i];
-	}
-	
-	
-	
-	
+    
+    int termino=0;
+    int num, n1, n2, n3, n4, contadorPicas, contadorFijas,j,temp;
+    int numero[4];
+    
+    srand(time(NULL));
+    for(int i=0; i<9; i++){
+        numero[i]=i;
+        
+    }
+    for(int i=0;i<4;i++)
+    {
+        j=(rand()%9);
+        temp=numero[i];
+        numero[i]=numero[j];
+        numero[j]=temp;
+    }
+    
+    while(termino==0){
+        cout<<"Ingresa el numero: "<<endl;
+        cin>>num;
+        while(num>9999)
+        {
+            cout<<"Ingresa de nuevo el número, de 4 cifras";
+            cin>>num;
+        }
+        
+        n1=(num/1000);
+        n2=((num%1000)/100);
+        n3=(((num%1000)%100)/10);
+        n4=((num%1000)%100)%10;
+        
+        contadorPicas=0;
+        contadorFijas=0;
+        
+        if(n1==numero[0] && n2==numero[1] && n3==numero[2] && n4==numero[3]){
+            cout<<"4 fijas. Ganaste";
+            termino=1;
+        }
+        else{
+            contadorPicas=contadorPicas + determinarPica(n1, 1, numero);
+            contadorPicas=contadorPicas + determinarPica(n2, 2, numero);
+            contadorPicas=contadorPicas + determinarPica(n3, 3, numero);
+            contadorPicas=contadorPicas + determinarPica(n4, 4, numero);
+            
+            if(n1==numero[0]){
+                contadorFijas=contadorFijas+1;
+            }
+            if(n2==numero[1]){
+                contadorFijas=contadorFijas+1;
+            }
+            if(n3==numero[2]){
+                contadorFijas=contadorFijas+1;
+            }
+            if(n4==numero[3]){
+                contadorFijas=contadorFijas+1;
+            }
+            
+            cout<<contadorPicas<<"picas,"<<contadorFijas<<"fijas ";
+        }
+        
+    }
+    _getch();
 }
