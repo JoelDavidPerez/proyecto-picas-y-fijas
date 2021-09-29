@@ -32,6 +32,7 @@ int main()
 	setlocale(LC_ALL, "");
 	char opcion;
 	int opcion2,opcion3,opcion4;
+	
 	do 
 	{
 	system("cls");
@@ -62,11 +63,14 @@ int main()
 				while(opcion4 == 3)
 				{
 				system("cls");
+					
 				cout<<"\t\t\t\t ¡A JUGAR! "<<datos.Nombre<<"\n"<<endl;
+					
 				int finalizador=0;
 				int numeroIngresado, unidad,decena,centena,milesima, contadorPicas, contadorFijas,j,temp;
 				int numero[4];
 				srand(time(NULL));
+					
 				for(int i=0; i<9; i++){
 					numero[i]=i;
 				}
