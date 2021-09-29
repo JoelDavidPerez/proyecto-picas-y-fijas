@@ -94,6 +94,11 @@ int main()
 						cout<<"Ingresa de nuevo el número, de 4 cifras"<<endl;
 						cin>>numeroIngresado;
 					}
+					while(numeroIngresado<0)
+					{
+						cout<<"Ingresa un valor correcto, positivo y de 4 cifras"<<endl;
+						cin>>numeroIngresado;
+					}
 					
 					unidad=(numeroIngresado/1000);
 					decena=((numeroIngresado%1000)/100);
