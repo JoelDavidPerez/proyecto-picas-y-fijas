@@ -103,6 +103,11 @@ int main()
 						cout<<"\n\n\t\t 4 fijas. Ganaste";
 						finalizador=1;
 					}
+					else if(num==-1)
+					{
+						cout<<"te rendiste :c";
+						termino=1;
+					}
 					else{
 						contadorPicas=contadorPicas + determinarPica(unidad, 1, numero);
 						contadorPicas=contadorPicas + determinarPica(decena, 2, numero);
