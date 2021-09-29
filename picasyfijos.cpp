@@ -23,7 +23,7 @@ int determinarPica(int numeroIngresado, int posicion, int numero[])
 struct Usuario
 {
 	string Nombre;
-	int intentos;
+	int intentos = 0;
 }datos;
 
 int main()
@@ -103,10 +103,10 @@ int main()
 						cout<<"\n\n\t\t 4 fijas. Ganaste";
 						finalizador=1;
 					}
-					else if(num==-1)
+					else if(numeroIngresado==-1)
 					{
 						cout<<"te rendiste :c";
-						termino=1;
+						finalizador=1;
 					}
 					else{
 						contadorPicas=contadorPicas + determinarPica(unidad, 1, numero);
@@ -126,8 +126,9 @@ int main()
 						if(milesima==numero[3]){
 							contadorFijas=contadorFijas+1;
 						}
-						
+						datos.intentos++;
 						cout<<contadorPicas<<"picas,"<<contadorFijas<<"fijas\n ";
+						cout<<"intentos: "<<datos.intentos<<endl;
 					}
 					
 				}
