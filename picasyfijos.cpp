@@ -199,7 +199,7 @@ int main()
 				cout<<"intentos: "<<intentos<<endl;
 			}
 			
-			for(int intentosFor=0;intentosReinicioFor==3;intentosFor++)
+			for(int intentosFor=0;intentosReinicioFor==20;intentosFor++)
 			{
 				cout<<"rindete";
 				cin>>num;
