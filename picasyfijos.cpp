@@ -36,29 +36,31 @@ int main()
 	do 
 	{
 	system("cls");
-	cout<<"\t\t\t\t Picas y fijas "<<endl;
-	cout<<"\n\t ¿Si tienes lo necesario para completar este juego?";
-	cout<<"\n\t presiona 1 ";
+	cout<<"\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t    Picas y fijas "<<endl;
+	cout<<"\n\t\t\t\t¿Si tienes lo necesario para completar este juego?";
+	cout<<"\n\t\t\t\tpresiona 1 ";
 	cin>>opcion2;
 		while(opcion2 == 1)
 		{
 		system("cls");
-		cout<<"¿Quién eres?"<<endl;
+		cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t  ¿Quién eres?"<<endl;
 		cin.ignore();
+		cout<<"\n\t\t\t\t\t\t  ";
 		getline(cin,datos.Nombre);
-		cout<<"presiona 2 para continuar: ";
+		cout<<"\n\t\t\t\t\t\t  presiona 2 para continuar: ";
 		cin>>opcion3;
 		while(opcion3 = 2)
 		{
 			system("cls");
-			cout<<"\t\t\t\tInstrucciones: "<<endl;
-			cout<<"En cada intento, el jugador dice 4 dígitos (no repetidos)"<<endl;
-			cout<<"y el programa le da pistas de cuántos aciertos tuvo, sin"<<endl;
-			cout<<"indicarle cuales fueron, de la siguiente forma: Si algún"<<endl;
-			cout<<"dígito que dice el jugador se encuentra dentro del número"<<endl;
-			cout<<"a adivinar, pero no está en la posición correcta, se llama"<<endl;
-			cout<<"PICA."<<endl;
-			cout<<"Si el dígito se encuentra en la posición adecuada, se llama FIJA. Así, las pistas serán la cantidad de PICAS y la cantidad de FIJAS que se tienen. El juego termina cuando el jugador tiene 4 FIJAS (4 dígitos en el orden adecuado).";
+			cout<<"\n\n\n\n\n\n\n\t\t\t\t\t\t\t  Instrucciones: "<<endl;
+			cout<<"\n\n\n\t\t\tEn cada intento, el jugador dice 4 dígitos (no repetidos) y el programa le da pistas de"<<endl;
+			cout<<"\n\t\t\tcuántos aciertos tuvo, sin indicarle cuales fueron, de la siguiente forma:"<<endl;
+			cout<<"\n\n\n\t\t\t\t# Si algún dígito que dice el jugador se encuentra dentro del número"<<endl;
+			cout<<"\n\t\t\t\t  a adivinar, pero no está en la posición correcta, se llama PICA."<<endl;
+			cout<<"\n\n\t\t\t\t# Si el dígito se encuentra en la posición adecuada,se llama FIJA.";
+			cout<<"\n\n\n\n\t\t\tAsí, las pistas serán la cantidad de PICAS y la cantidad de FIJAS que se tienen.";
+			cout<<"\n\n\t\t\t- El juego termina cuando el jugador tiene 4 FIJAS (4 dígitos en el orden adecuado).";
+			cout<<"\n\t\t\t\t\t\t  presiona 3 para continuar: ";
 			cin>>opcion4;
 				while(opcion4 == 3)
 				{
