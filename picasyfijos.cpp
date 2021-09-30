@@ -32,7 +32,6 @@ int main()
 	setlocale(LC_ALL, "");
 	//variables
 	char opcion;
-	int ancho = 1;
 	int opcion2,opcion3,opcion4;
 	
 	do 
