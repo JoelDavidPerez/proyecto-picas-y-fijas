@@ -219,7 +219,9 @@ int main()
 					}
 					_getch();
 				}
+				break;
 			}
+			break;
 		}
 		//Pregunta para volver a iniciar el proceso	
 		cout << "\n\t\t-------------------------------------------------------" ;
