@@ -218,8 +218,16 @@ int main()
 				
 				while(opcion4 == 3){
 					system("cls");
-					
-					cout<<"\t\t\t\t ¡A JUGAR! "<<datos.Nombre<<"\n"<<endl;
+					cout<<"\t\t				 o_.-._                            .   . ."<<endl;
+					cout<<"\t\t	             |_.-._|                        .  . .  '                            oo                                     dP "<<endl;        
+					cout<<"\t\t	             |                         . '. '                                    oo                                     dP "<<endl;
+					cout<<"\t\t	        ^^^^^^^                       :'                             .d8888b.    dP dP    dP .d8888b. .d8888b. 88d888b. 88 "<<endl;
+					cout<<"\t\t	^^^ ^^^ | : : | ^^^ ^^^              .;      m p         o s         88'  `88    88 88    88 88'  `88 88'  `88 88'  `88 dP"<<endl;
+					cout<<"\t\t	| |_| |_|     |_| |_| |              ..    e     e     m             88.  .88    88 88.  .88 88.  .88 88.  .88 88         "<<endl;
+					cout<<"\t\t	|                     |           .--++-.          z a               `88888P8    88 `88888P' `8888P88 `88888P8 dP       oo"<<endl;
+					cout<<"\t\t	|  :   :  .-.  :   :  |        .__|]_[]_'-......                                 88               .88                     "<<endl;
+					cout<<"\t\t	|         | |         |         \\\ o o o '=-=-=-!                                 dP           d8888P                      "<<endl;
+					cout<<"\t\t	-------------------------~~~~~~~~\\\_____________|~~~~MC~~~~"""<<endl;
 					
 					int termino=0;
 					int num, n1, n2, n3, n4, contadorPicas, contadorFijas,j,temp;
