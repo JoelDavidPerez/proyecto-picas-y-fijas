@@ -79,8 +79,8 @@ int main()
 		   cout<<"     ¶_________________________¶         *****************                                                                    *****************"<<endl;
 		  cout<<"     ¶__¶¶¶¶¶¶__¶¶¶¶¶__¶¶¶¶¶___¶        *******************       ~¿Si tienes lo necesario para completar este juego?~       *******************"<<endl;
 		 cout<<"     ¶__¶¶¶¶¶¶__¶¶¶¶¶__¶¶¶¶¶___¶       *********************                                                                *********************"<<endl;
-		cout<<"     ¶__¶¶¶¶¶¶__¶¶¶¶¶__¶¶¶¶¶___       ***********************                          presiona 1                          ***********************"<<endl;
-		         cout<<"     ¶__¶¶¶¶¶¶_________________¶               *****         (\_/)                                                                   *****          (\_/)"<<endl;
+		cout<<"     ¶__¶¶¶¶¶¶__¶¶¶¶¶__¶¶¶¶¶___       ***********************               presiona 1 y enter para continuar               ***********************"<<endl;
+		         cout<<"     ¶__¶¶¶¶¶¶_________________¶               *****         (\\\_/)                                                                  *****          (\\\_/)"<<endl;
 		         cout<<"     ¶__¶¶¶¶¶¶_________________¶               *****         (_..)                                                                  *****          (_..)"<<endl;
 		         cout<<"     ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶               *****         c(')(')_                                                               *****          c(')(')_"                       <<endl;
 		         
@@ -94,25 +94,27 @@ int main()
 		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+";
 		cout<<"\n\t\t\t\t\t       |__|__|                +  Lilly Sofia Ayala Rojas                    |__|__|"; 
 		cout<<"\n\t\t\t\t\t       |__|__|                + Joel David Perez Arroyave                   |__|__|";
-		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+                                        ";
+		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+                    ";
 		cin>>opcion2;
-		
 		while(opcion2 == 1){
 			system("cls");
-			cout<<"\n\n\n";
+			cout<<"\n\n";
 			cout<<"\t.:  ::      -.         -   .:.::          :.   :: = :: -       *                                                             "<<endl;  
 			cout<<"\t    .            *       ...                            ...        .                                                                           "<<endl;
 			cout<<"\t  :.    :.                     *  :  : ..        ..    *                                                                                       "  <<endl;
-			cout<<"\t  _____     *   ____     _______________   ________      _________                              QUIEN ERES?                                   '"<<endl;
+			cout<<"\t.:  ::      -.         -   .:.::          :.   :: = :: -       *                                  .-.-.                          "<<endl;  
+			cout<<"\t    .            *       ...                            ...        .                            ==`. .'==                                           "<<endl;
+			cout<<"\t  :.    :.                     *  :  : ..        ..    *                                            '                                           "  <<endl;
+			cout<<"\t  _____     *   ____     _______________   ________      _________                              QUIEN ERES?                                   "<<endl;
 			cout<<"\t |o o o|_______|    |___|               | | # # #  |____| o o o o | *                   .-.-.  .-.-.  .-.-.  .-.-.                      "<<endl;
 			cout<<"\t |o o o|  * * *|: ::|. .|               |o| # # #  |. . | o o o o |                    =`. .'==`. .'==`. .'==`. .'=                          "<<endl;
 			cout<<"\t |o o o|* * *  |::  |. .| []  []  []  []|o| # # #  |. . | o o o o |                       '      '      '      '                      "<<endl;
 			cout<<"\t |o o o|**  ** |:  :|. .| []  []  []    |o| # # #  |. . | o o o o |              "<<endl;
-			cout<<"\t |_[]__|__[]___|_||_|__<|____________;;_|-|___/\___ |_ ._|____[]___|          "<<"\n";  
+			cout<<"\t |_[]__|__[]___|_||_|__<|____________;;_|-|___/\\\___ |_ ._|____[]___|          "<<"\n";  
 			cout<<"\t------------------------------------------------------------------------------------------------------------------------------------------------------"<<"\n";
 			cout<<"												          ______                      "<<endl;
-			cout<<"												         /|_||_\`.__                      "<<endl;
-			cout<<"												        (   _    _ _\                   "<<endl;
+			cout<<"												         /|_||_\\\`.__                      "<<endl;
+			cout<<"												        (   _    _ _\\\                   "<<endl;
 			cout<<"												        =`-(_)--(_)-'           "<<endl;
 			cout<<"\t------------------------------------------------------------------------------------------------------------------------------------------------------"<<endl;                                   
 			cout<<"	            []                                       []                         []                                       []                         []"<<endl;
@@ -133,18 +135,17 @@ int main()
 			cout<<"                                        |______'\\" <<endl; 
 			cout<<"                                  _____ |_______'\\____" <<endl; 
 			cout<<"                                  \___________________/~~~~" <<endl; 
-			cout<<"\t,.-~*´¨¯¨`*•~-.¸,.-~*´¨¯¨`*•~-.¸,.-~*´¨¯¨`*•~-.¸,.-~*´¨¯¨`*•~-.¸,.-~* ,.-~*´¨¯¨`*•~-.¸,."<<endl;  
-			cout<<"\tx´¨¯¨`*•~-.¸,.-~*´¨¯¨`*•~-.¸,.-~*´¨¯¨`*•~-.¸,.-~*´ `*•~-.¸,.-~*´`*•~-.¸,.-~*´•~-.¸,.-~*´"; 
+			cout<<"\t,.-~*´¨¯¨`*•~-.¸,.-~*´¨¯¨`*•~-.¸,.-~*´¨¯¨`*•~-.¸,.-~*´¨¯¨`*•~-.¸,.-~* ,.-~*´¨¯¨`*•~-.¸,."<<endl;   
 			cin.ignore();
-			cout<<"             ";
+			cout<<"             >";
 			getline(cin,datos.Nombre);
-			cout<<"° \n\n\t\t\t\t\t\t\t\t\t\t\tpresiona 2 para continuar: ";
+			cout<<"  \n\n\t\t\t\t\t\t\t\t\t\t\t\t       presiona 2 para continuar...  ";
 			
 			cin>>opcion3;
 			
 			while(opcion3 = 2){
 				system("cls");
-				cout<<"\n\n"<<endl; 
+				cout<<"\n"<<endl; 
 				cout<<"           .       . .        *";
 				cout<<" *   .   .'    * ,      .       .  ,     *";
 				cout<<"   .     *     .'";
@@ -211,14 +212,14 @@ int main()
 				cout<<"  -- . ''     -- . ''    `--._----------`--._      -- . ''     -- . ''"<<endl;
 				cout<<"                              `--._ _________`--._                                      =^..^= =^..^= =^..^=| Puedes rendirte ingresando -1 |=^..^= =^..^= =^..^="<<endl;
 				cout<<" -- . ''           :'              `--._ ---------`--._-- . ''    -- . ''"<<endl;
-				cout<<"          -- . ''       -- . ''         `--._ _________`--._   -- . ''                                           presiona 3 para continuar..."<<endl;
+				cout<<"          -- . ''       -- . ''         `--._ _________`--._   -- . ''                                      presiona 3 y enter para continuar..."<<endl;
 				cout<<":'                 -- . ''          -- . ''  `--._----------`--._"<<endl;
 				cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t     ";	   
 				cin>>opcion4;
 				
 				while(opcion4 == 3){
 					system("cls");
-					cout<<"\t\t				 o_.-._                            .   . ."<<endl;
+					cout<<"\t\t		   o_.-._                            .   . ."<<endl;
 					cout<<"\t\t	             |_.-._|                        .  . .  '                            oo                                     dP "<<endl;        
 					cout<<"\t\t	             |                         . '. '                                    oo                                     dP "<<endl;
 					cout<<"\t\t	        ^^^^^^^                       :'                             .d8888b.    dP dP    dP .d8888b. .d8888b. 88d888b. 88 "<<endl;
@@ -227,47 +228,55 @@ int main()
 					cout<<"\t\t	|                     |           .--++-.          z a               `88888P8    88 `88888P' `8888P88 `88888P8 dP       oo"<<endl;
 					cout<<"\t\t	|  :   :  .-.  :   :  |        .__|]_[]_'-......                                 88               .88                     "<<endl;
 					cout<<"\t\t	|         | |         |         \\\ o o o '=-=-=-!                                 dP           d8888P                      "<<endl;
-					cout<<"\t\t	-------------------------~~~~~~~~\\\_____________|~~~~MC~~~~"""<<endl;
-					
+					cout<<"\t\t	|||||||||||||||||||||||~~~~~~~~~~\\\_____________|~~~~~~~~~~~~~~~"""<<endl;
+					cout<<"\n\n";
 					int termino=0;
 					int num, n1, n2, n3, n4, contadorPicas, contadorFijas,j,temp;
 					int numero[4];
 					int intentos=0;
 					int intentosReinicioFor=0;
 
-
+                    //numero aleatorio
 					srand(time(NULL));
-					for(int i=0; i<9; i++){
+					for(int i=1; i<10; i++){
 						numero[i]=i;
 					}
-					for(int i=0;i<4;i++)
+					for(int i=1;i<4;i++)
 					{
 						j=(rand()%9);
 						temp=numero[i];
 						numero[i]=numero[j];
 						numero[j]=temp;
 					}
-					for(int i=0;i<4;i++)
+					for(int i=1;i<5;i++)
 					{
 						cout<<numero[i];
 					}
 
 					while(termino==0){
-							cout<<"Ingresa el numero: "<<endl;
+							cout<<"\n\n\t\t\tIngresa el numero: "<<"\n\n";
+							cout<<"\t\t\t";
 							cin>>num;
 							while(num>9999)
 							{
-								cout<<"Ingresa de nuevo el número, de 4 cifras";
+								cout<<"\t\t\tIngresa de nuevo el número, de 4 cifras\n\n";
+								cout<<"\t\t\t----------------8<---------------------------8<----------------\n";
+								cout<<"\n\t\t\tIngresa el numero:\n\n\t\t\t";
 								cin>>num;
 							}
-							/*while(num<100)
+							while(num<1000 && num!=-1)
 							{
-								cout<<"Ingresa un valor correcto de 4 cifras por favor: ";
+								cout<<"\t\t\tIngresa un valor correcto de 4 cifras \n\n ";
+								cout<<"\t\t\t----------------8<---------------------------8<----------------\n";
+								cout<<"\n\t\t\tIngresa el numero:\n\n\t\t\t";
 								cin>> num;
-							}*/
+							}
+
 							while(num<-1)
 							{
-								cout<<"Ingresa un valor correcto. Tiene que ser positivo y de 4 cifras";
+								cout<<"\t\t\tIngresa un valor correcto. Tiene que ser positivo y de 4 cifras\n\n";
+							    cout<<"\t\t\t----------------8<---------------------------8<----------------\n";
+							    cout<<"\n\t\t\tIngresa el numero:\n\n\t\t\t";
 								cin>>num;
 							}
 							n1=(num/1000);
@@ -278,8 +287,22 @@ int main()
 							contadorPicas=0;
 							contadorFijas=0;
 
-							if(n1==numero[0] && n2==numero[1] && n3==numero[2] && n4==numero[3]){
-								cout<<"4 fijas. Ganaste";
+							if(n1==numero[1] && n2==numero[2] && n3==numero[3] && n4==numero[4]){
+								cout<<"\n\n\n";
+								cout<<"\t\t\t  	                           ^     ^     ^\n";
+								cout<<"\t\t\t\t(          (    *         |V|   |V|   |V|        )   *   )       (\n";
+								cout<<"\t\t\t\t )   *      )             | |   | |   | |        (       (   *    )\n";
+								cout<<"\t\t\t\t(          (           (*******************)    *       *    )    *\n";
+								cout<<"\t\t\t\t(     (    (           (    *         *    )               )    (\n";
+								cout<<"\t\t\t\t )   * )    )          (   \|/       \|/     )         *    (      )\n";
+								cout<<"\t\t\t\t(     (     *          (<<<<<<<<<*>>>>>>>>>)               )    (\n";
+								cout<<"\t\t\t\t )     )        ((*******************************))       (  *   )\n";
+								cout<<"\t\t\t\t(     (   *     ((      4 PICAS. ¡¡GANASTE!!     ))      * )    (\n";
+								cout<<"\t\t\t\t ) *   )        ((   *    *   *    *    *    *   ))   *   (      )\n";
+								cout<<"\t\t\t\t(     (         ((  \|/  \|/ \|/  \|/  \|/  \|/        ))        )    (\n";
+								cout<<"\t\t\t\t*)     )        ((^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^))       (      )\n";
+								cout<<"\t\t\t\t(     (  (**********************************************) )  * (\n";
+								cout<<"\n\n\t\t\t\tpresiona enter para continuar...";
 								termino=1;
 							}
 							else if(num==-1)
@@ -293,22 +316,23 @@ int main()
 								contadorPicas=contadorPicas + determinarPica(n3, 3, numero);
 								contadorPicas=contadorPicas + determinarPica(n4, 4, numero);
 
-								if(n1==numero[0]){
+								if(n1==numero[1]){
 									contadorFijas=contadorFijas+1;
 								}
-								if(n2==numero[1]){
+								if(n2==numero[2]){
 									contadorFijas=contadorFijas+1;
 								}
-								if(n3==numero[2]){
+								if(n3==numero[3]){
 									contadorFijas=contadorFijas+1;
 								}
-								if(n4==numero[3]){
+								if(n4==numero[4]){
 									contadorFijas=contadorFijas+1;
 								}
 								intentos++;
 								intentosReinicioFor++;
-								cout<<contadorPicas<<"picas,"<<contadorFijas<<"fijas "<<endl;
-								cout<<"intentos: "<<intentos<<endl;
+								cout<<"\t\t\t"<<contadorPicas<<"picas,"<<contadorFijas<<"fijas "<<"\t\t   ";
+								cout<<"intentos: "<<intentos<<"\n\n";
+								cout<<"\t\t\t----------------8<---------------------------8<----------------";
 							}
 
 							for(int intentosFor=0;intentosReinicioFor==20;intentosFor++)
@@ -336,11 +360,11 @@ int main()
 			break;
 		}
 		//Pregunta para volver a iniciar el proceso	
-		cout << "\n\t\t-------------------------------------------------------" ;
+		system("cls");
 		cout << "\n\n\n\t>Desea repetir el proceso? S/N" << endl;
 		opcion = getch();			
 	}while (opcion == 'Y' || opcion == 'y' || opcion == 'S' || opcion == 's');
-		system("cls");
+	system("cls");
 	cout<<"\n\n\n\n\n"<<endl;
 	cout<<"\t\t\t	         _ _"<<endl;
 	cout<<"\t\t\t                ( Y )"<<endl;
