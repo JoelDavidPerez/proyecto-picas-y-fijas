@@ -329,7 +329,7 @@ int main()
 								cout<<"\t\t\t----------------8<---------------------------8<----------------";
 							}
 
-							for(int intentosFor=0;intentosReinicioFor==1;intentosFor++)
+							for(int intentosFor=0;intentosReinicioFor==10;intentosFor++)
 							{
 								cout<<"\n\n\n\n\t\t\tquieres rendirte? ";
 								cin>>num;
