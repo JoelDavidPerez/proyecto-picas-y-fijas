@@ -9,7 +9,7 @@ using namespace std;
 int determinarPica(int numeroIngresado, int posicion, int numero[])
 {
 	int devuelve = 0;
-	for(int i=0;i<4;i++)
+	for(int i=1;i<5;i++)
 	{
 		if(numeroIngresado==numero[i] && posicion!=(i+1))//determina el número que sea igual y que la posición sea igual
 		{
@@ -219,7 +219,7 @@ int main()
 					for(int i=1; i<10; i++){
 						numero[i]=i;
 					}
-					for(int i=1;i<4;i++)
+					for(int i=1;i<5;i++)
 					{
 						j=(rand()%10);
 						temp=numero[i];
@@ -305,10 +305,10 @@ int main()
 									termino=1;
 							}
 							else{
-								contadorPicas=contadorPicas + determinarPica(n1, 1, numero);
-								contadorPicas=contadorPicas + determinarPica(n2, 2, numero);
-								contadorPicas=contadorPicas + determinarPica(n3, 3, numero);
-								contadorPicas=contadorPicas + determinarPica(n4, 4, numero);
+								contadorPicas=contadorPicas + determinarPica(n1, 2, numero);
+								contadorPicas=contadorPicas + determinarPica(n2, 3, numero);
+								contadorPicas=contadorPicas + determinarPica(n3, 4, numero);
+								contadorPicas=contadorPicas + determinarPica(n4, 5, numero);
 
 								if(n1==numero[1]){
 									contadorFijas=contadorFijas+1;
