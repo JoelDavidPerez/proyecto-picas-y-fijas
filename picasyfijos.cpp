@@ -88,13 +88,14 @@ int main()
 		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+";   
 		cout<<"\n\t\t\t\t\t       |                    UNIVERSIDAD FRANCISCO JOSE DE CALDAS                  |"; 
 		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+";
-		cout<<"\n\t\t\t\t\t       |                    PROYECTO FINAL - PROGRAMACION BASICA                  |";
+		cout<<"\n\t\t\t\t\t       |                    PROYECTO FINAL - LOGICA                               |";
 		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+";
 		cout<<"\n\t\t\t\t\t       ¦                                 NOMBRES:                                 ¦";
 		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+";
 		cout<<"\n\t\t\t\t\t       |__|__|                +  Lilly Sofia Ayala Rojas                    |__|__|"; 
 		cout<<"\n\t\t\t\t\t       |__|__|                + Joel David Perez Arroyave                   |__|__|";
-		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+                    ";
+		cout<<"\n\t\t\t\t\t       |__|__|                + Maicol Steven Fagua Rojas                   |__|__|";
+		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+";
 		cin>>opcion2;
 		while(opcion2 == 1){
 			system("cls");
