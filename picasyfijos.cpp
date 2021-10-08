@@ -3,6 +3,7 @@
 #include <conio.h>
 #include <iomanip>
 #include <time.h>
+#include <fstream>
 
 using namespace std;
 
@@ -23,16 +24,22 @@ int determinarPica(int numeroIngresado, int posicion, int numero[])
 struct Usuario
 {
 	string Nombre;
-	int intentos = 0;
+	int intentosFin;
 }datos;
+
+void crearAnadir();
+void ListasOrganizada();
+void crearAnadir2();
 
 int main()
 {
 	//añadir los carácteres especiales 
 	setlocale(LC_ALL, "");
 	//variables
+	int n=0;
 	char opcion;
 	int opcion2,opcion3,opcion4;
+	int intentos;
 		
 	do 
 	{
@@ -88,14 +95,13 @@ int main()
 		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+";   
 		cout<<"\n\t\t\t\t\t       |                    UNIVERSIDAD FRANCISCO JOSE DE CALDAS                  |"; 
 		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+";
-		cout<<"\n\t\t\t\t\t       |                    PROYECTO FINAL - LOGICA                               |";
+		cout<<"\n\t\t\t\t\t       |                    PROYECTO FINAL - PROGRAMACION BASICA                  |";
 		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+";
 		cout<<"\n\t\t\t\t\t       ¦                                 NOMBRES:                                 ¦";
 		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+";
 		cout<<"\n\t\t\t\t\t       |__|__|                +  Lilly Sofia Ayala Rojas                    |__|__|"; 
 		cout<<"\n\t\t\t\t\t       |__|__|                + Joel David Perez Arroyave                   |__|__|";
-		cout<<"\n\t\t\t\t\t       |__|__|                + Maicol Steven Fagua Rojas                   |__|__|";
-		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+";
+		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+                    ";
 		cin>>opcion2;
 		while(opcion2 == 1){
 			system("cls");
@@ -116,8 +122,7 @@ int main()
 			cout<<"\t\t\t\t   |  |  |  |  |  |  |  |  |  |  |  |  |  |"<<endl;
 			cout<<"\t\t\t\t ||||||||||||||||||||||||||||||||||||||||||||"<<endl;
 			cout<<"\t\t\t\t\t\t\t\t\t\t      > ";
-			cin.ignore();
-			getline(cin,datos.Nombre);
+			crearAnadir();
 			cout<<"\n\n\n\t\t\t\t\t\t\t\t\t\t      preiona 2 y enter para continuar...  ";
 			
 			cin>>opcion3;
@@ -212,7 +217,6 @@ int main()
 					int termino=0;
 					int num, n1, n2, n3, n4, contadorPicas, contadorFijas,j,temp;
 					int numero[4];
-					int intentos=0;
 					int intentosReinicioFor=0;
 
                     //numero aleatorio
@@ -329,7 +333,6 @@ int main()
 								cout<<"intentos: "<<intentos<<"\n\n";
 								cout<<"\t\t\t----------------8<---------------------------8<----------------";
 							}
-
 							for(int intentosFor=0;intentosReinicioFor==10;intentosFor++)
 							{
 								cout<<"\n\n\n\n\t\t\tquieres rendirte? ";
@@ -359,12 +362,14 @@ int main()
 								intentosFor=0;
 							}
 					}
+					datos.intentosFin = intentos;
 					_getch();
 				}
 				break;
 			}
 			break;
 		}
+		crearAnadir2();
 		//Pregunta para volver a iniciar el proceso	
 		system("cls");
 			cout<<"\n\n\n\n\n\n\n\n\n\n\n\n";
@@ -386,6 +391,10 @@ int main()
 		
 		opcion = getch();			
 	}while (opcion == 'Y' || opcion == 'y' || opcion == 'S' || opcion == 's');
+	system("cls");
+	ListasOrganizada();
+	cin.get();
+	cin.ignore();
 	system("cls");
 	cout<<"\n\n\n\n"<<endl;
 	cout<<"\t\t\t	         _ _"<<endl;
@@ -423,4 +432,72 @@ int main()
 	cout<<"\t   |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"<<endl;
 	cout<<"\n\n\n\n\n";
 	return 0;
+}
+
+void crearAnadir()
+{
+	string nombre;
+    ofstream archivo2;
+    archivo2.open("top23.txt",ios::out | ios::app);//añadir cosas
+    cin >> nombre;
+ 	
+    if(archivo2.fail())
+    {
+        cout<<"no se pudo abrir el archivo";
+        exit(1);
+    }
+    else
+    {
+    	archivo2 << " " << nombre;
+	}
+    archivo2.close();
+}
+void crearAnadir2()
+{
+    ofstream archivo4;
+    datos.intentosFin;
+    archivo4.open("top23.txt",ios::out | ios::app);//añadir cosas
+    if(archivo4.fail())
+    {
+        cout<<"no se pudo abrir el archivo";
+        exit(1);
+    }
+    
+	else
+    {
+    	archivo4 << " " << datos.intentosFin;
+	}
+    archivo4.close();
+}
+void ListasOrganizada()
+{
+    string nombre;
+    int intentos;
+    int conteoRegistro = 0;
+    int i = 0;
+    ifstream archivo1("top23.txt");
+	while(!archivo1.eof()){
+     	archivo1 >> datos.Nombre;
+       	archivo1 >> datos.intentosFin;
+       	conteoRegistro++;
+	}
+	Usuario tablero[conteoRegistro];
+	archivo1.close();
+	ifstream archivo3("top23.txt");
+	while(!archivo3.eof()){
+     	archivo3 >> tablero[i].Nombre;
+       	archivo3 >> tablero[i].intentosFin;
+       	i++;
+	}
+	for(int h = 0; h < conteoRegistro; h++) {
+		for(int x = 0; x < conteoRegistro; x++){
+			if(tablero[h].intentosFin < tablero[x].intentosFin) {
+				swap(tablero[h], tablero[x]);
+			}
+		}
+	}
+	for(int z = 0; z < 3; z++) {
+		cout<<tablero[z].Nombre<<tablero[z].intentosFin<<endl;
+	}
+    archivo3.close();
 }
