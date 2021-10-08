@@ -450,7 +450,7 @@ int main()
 
 void crearAnadir()
 {
-	string nombre;
+    string nombre;
     ofstream archivo2;
     archivo2.open("datos.txt",ios::out | ios::app);//creación del archivo para el nombre
     cin >> nombre;
@@ -538,7 +538,7 @@ void ListasOrganizada()
 	cout<<"\t\t\t\t\t              __                            _||_   |"<<endl;
 	cout<<"\t\t\t\t\t     ____--`~    '--~~__            __ ----~    ~`---,              ___"<<endl;
 	cout<<"\t\t\t\t\t-~--~                   ~---__ ,--~'                  ~~----_____-~'   `~----~~"<<endl;
-    archivo3.close();
+    	archivo3.close();
 }
 //música para el juego
 void musica()
