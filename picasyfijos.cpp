@@ -235,17 +235,17 @@ int main()
 					for(int i=1; i<10; i++){
 						numero[i]=i;
 					}
-					for(int i=1;i<5;i++)
+					for(int i=1;i<4;i++)
 					{
-						j=(rand()%10);
+						j=(rand()%9+1);
 						temp=numero[i];
 						numero[i]=numero[j];
 						numero[j]=temp;
 					}
-					for(int i=1;i<5;i++)
+					/*for(int i=1;i<5;i++)
 					{
 						cout<<numero[i];
-					}
+					}*/
 
 					while(termino==0){
 							cout<<"\n\n\t\t\tIngresa el numero: "<<"\n\n";
@@ -450,7 +450,7 @@ void crearAnadir()
 {
 	string nombre;
     ofstream archivo2;
-    archivo2.open("top23.txt",ios::out | ios::app);//añadir cosas
+    archivo2.open("datos.txt",ios::out | ios::app);//añadir cosas
     cin >> nombre;
  	
     if(archivo2.fail())
@@ -468,7 +468,7 @@ void crearAnadir2()
 {
     ofstream archivo4;
     datos.intentosFin;
-    archivo4.open("top23.txt",ios::out | ios::app);//añadir cosas
+    archivo4.open("datos.txt",ios::out | ios::app);//añadir cosas
     if(archivo4.fail())
     {
         cout<<"no se pudo abrir el archivo";
@@ -487,7 +487,7 @@ void ListasOrganizada()
     int intentos;
     int conteoRegistro = 0;
     int i = 0;
-    ifstream archivo1("top23.txt");
+    ifstream archivo1("datos.txt");
 	while(!archivo1.eof()){
      	archivo1 >> datos.Nombre;
        	archivo1 >> datos.intentosFin;
@@ -495,7 +495,7 @@ void ListasOrganizada()
 	}
 	Usuario tablero[conteoRegistro];
 	archivo1.close();
-	ifstream archivo3("top23.txt");
+	ifstream archivo3("datos.txt");
 	while(!archivo3.eof()){
      	archivo3 >> tablero[i].Nombre;
        	archivo3 >> tablero[i].intentosFin;
