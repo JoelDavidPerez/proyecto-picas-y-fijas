@@ -8,7 +8,7 @@
 #include "MMSystem.h"
 
 using namespace std;
-
+//función para verificar las picas comparando posiciones
 int determinarPica(int numeroIngresado, int posicion, int numero[])
 {
 	int devuelve = 0;
@@ -23,12 +23,12 @@ int determinarPica(int numeroIngresado, int posicion, int numero[])
 	return devuelve;
 }
 
-struct Usuario
+struct Usuario //struct que recoge los datos del usuario 
 {
 	string Nombre;
 	int intentosFin;
 }datos;
-
+//creacion de void
 void crearAnadir();
 void ListasOrganizada();
 void crearAnadir2();
@@ -36,11 +36,8 @@ void musica();
 
 int main()
 {
-	/*char soundfile[] = "C:\soundtrack_.wav";
-    cout<<PlaySound((LPCSTR)soundfile,NULL,SND_FILENAME | SND_ASYNC);
-
-    system("pause");*/
-    musica();
+	//llamada de la música	
+    	musica();
 
 	//añadir los carácteres especiales 
 	setlocale(LC_ALL, "");
@@ -49,7 +46,7 @@ int main()
 	char opcion;
 	int opcion2,opcion3,opcion4;
 	int intentos;
-		
+		//muestra de pantallas
 	do 
 	{
 		system("cls");
@@ -132,7 +129,7 @@ int main()
 			cout<<"\t\t\t\t   |  |  |  |  |  |  |  |  |  |  |  |  |  |"<<endl;
 			cout<<"\t\t\t\t ||||||||||||||||||||||||||||||||||||||||||||"<<endl;
 			cout<<"\t\t\t\t\t\t\t\t\t\t      > ";
-			crearAnadir();
+			crearAnadir(); //se llama la función para agregar el nombre al archivo
 			cout<<"\n\n\n\t\t\t\t\t\t\t\t\t\t      preiona 2 y enter para continuar...  ";
 			
 			cin>>opcion3;
@@ -224,17 +221,19 @@ int main()
 					cout<<"\t\t	|         | |         |         \\\ o o o '=-=-=-!                                 dP           d8888P                      "<<endl;
 					cout<<"\t\t	|||||||||||||||||||||||~~~~~~~~~~\\\_____________|~~~~~~~~~~~~~~~"""<<endl;
 					cout<<"\n\n";
+					//inicio del programa
 					int termino=0;
 					int num, n1, n2, n3, n4, contadorPicas, contadorFijas,j,temp;
 					int numero[4];
 					int intentos=0;
 					int intentosReinicioFor=0;
 
-                    //numero aleatorio
+                    			//numero aleatorio
 					srand(time(NULL));
 					for(int i=1; i<10; i++){
 						numero[i]=i;
 					}
+					//organización para el número aleatorio
 					for(int i=1;i<4;i++)
 					{
 						j=(rand()%9+1);
@@ -251,6 +250,7 @@ int main()
 							cout<<"\n\n\t\t\tIngresa el numero: "<<"\n\n";
 							cout<<"\t\t\t";
 							cin>>num;
+							//condiciones para el número ingresado
 							while(num>9999)
 							{
 								cout<<"\t\t\tIngresa de nuevo el número, de 4 cifras\n\n";
@@ -280,7 +280,7 @@ int main()
 
 							contadorPicas=0;
 							contadorFijas=0;
-
+							//verificación de los resultados si es picas o fijas
 							if(n1==numero[1] && n2==numero[2] && n3==numero[3] && n4==numero[4]){
 								cout<<"\n\n\n";
 								cout<<"\t\t\t  	                           ^     ^     ^\n";
@@ -320,6 +320,7 @@ int main()
 									cout<<"\n\n\t\t\t\t   presiona enter para continuar...";
 									termino=1;
 							}
+							//verificacior de picas llamando la función
 							else{
 								contadorPicas=contadorPicas + determinarPica(n1, 2, numero);
 								contadorPicas=contadorPicas + determinarPica(n2, 3, numero);
@@ -344,7 +345,7 @@ int main()
 								cout<<"intentos: "<<intentos<<"\n\n";
 								cout<<"\t\t\t----------------8<---------------------------8<----------------";
 							}
-
+							//pantalla de rendirse y muestra del número a adivinar
 							for(int intentosFor=0;intentosReinicioFor==10;intentosFor++)
 							{
 								cout<<"\n\n\n\n\t\t\tquieres rendirte? ";
@@ -404,6 +405,7 @@ int main()
 		opcion = getch();			
 	}while (opcion == 'Y' || opcion == 'y' || opcion == 'S' || opcion == 's');
 	system("cls");
+	//muestra del top 3 y pantalla final
 	ListasOrganizada();
 	cin.get();
 	cin.ignore();
@@ -450,7 +452,7 @@ void crearAnadir()
 {
 	string nombre;
     ofstream archivo2;
-    archivo2.open("datos.txt",ios::out | ios::app);//añadir cosas
+    archivo2.open("datos.txt",ios::out | ios::app);//creación del archivo para el nombre
     cin >> nombre;
  	
     if(archivo2.fail())
@@ -468,7 +470,7 @@ void crearAnadir2()
 {
     ofstream archivo4;
     datos.intentosFin;
-    archivo4.open("datos.txt",ios::out | ios::app);//añadir cosas
+    archivo4.open("datos.txt",ios::out | ios::app);//creacion del archivo para los datos de los intentos
     if(archivo4.fail())
     {
         cout<<"no se pudo abrir el archivo";
@@ -481,6 +483,7 @@ void crearAnadir2()
 	}
     archivo4.close();
 }
+//muestra del top 3 comparando con el método burbuja
 void ListasOrganizada()
 {
     string nombre;
@@ -537,7 +540,7 @@ void ListasOrganizada()
 	cout<<"\t\t\t\t\t-~--~                   ~---__ ,--~'                  ~~----_____-~'   `~----~~"<<endl;
     archivo3.close();
 }
-
+//música para el juego
 void musica()
 {
 	char soundfile[] = "C:\soundtrack_.wav";
