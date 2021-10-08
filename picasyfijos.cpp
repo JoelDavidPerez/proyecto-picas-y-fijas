@@ -508,9 +508,33 @@ void ListasOrganizada()
 			}
 		}
 	}
+	cout<<"\n\n\n\n\n\n\n\t\t\t\t\t  dP                        d8888b. "<<endl;
+	cout<<"\t\t\t\t\t  88                            `88 "<<endl;
+	cout<<"\t\t\t\t\td8888P .d8888b. 88d888b.     aaad8' "<<endl;
+	cout<<"\t\t\t\t\t  88   88'  `88 88'  `88        `88 "<<endl;
+	cout<<"\t\t\t\t\t  88   88.  .88 88.  .88        .88 "<<endl;
+	cout<<"\t\t\t\t\t  dP   `88888P' 88Y888P'    d88888P "<<endl;
+	cout<<"\t\t\t\t\t                88                  "<<endl;
+	cout<<"\t\t\t\t\t                dP "<<endl;
 	for(int z = 0; z < 3; z++) {
 		cout<<tablero[z].Nombre<<tablero[z].intentosFin<<endl;
 	}
+	cout<<"\t\t\t\t	                                                |>>>"<<endl;
+	cout<<"\t\t\t\t\t                                                |"<<endl;
+	cout<<"\t\t\t\t\t                                            _  _|_  _"<<endl;
+	cout<<"\t\t\t\t\t                                           |;|_|;|_|;|"<<endl;
+	cout<<"\t\t\t\t\t                                           \\\\.    .  /"<<endl;
+	cout<<"\t\t\t\t\t                                            \\\\:  .  /"<<endl;
+	cout<<"\t\t\t\t\t                                             ||:   |"<<endl;
+	cout<<"\t\t\t\t\t                                             ||:.  |"<<endl;
+	cout<<"\t\t\t\t\t                                             ||:  .|"<<endl;
+	cout<<"\t\t\t\t\t                                             ||:   |       \\\,/"<<endl;
+	cout<<"\t\t\t\t\t                                             ||: , |            /`\\\ "<<endl;
+	cout<<"\t\t\t\t\t                                             ||:   |"<<endl;
+	cout<<"\t\t\t\t\t                                             ||: . |"<<endl;
+	cout<<"\t\t\t\t\t              __                            _||_   |"<<endl;
+	cout<<"\t\t\t\t\t     ____--`~    '--~~__            __ ----~    ~`---,              ___"<<endl;
+	cout<<"\t\t\t\t\t-~--~                   ~---__ ,--~'                  ~~----_____-~'   `~----~~"<<endl;
     archivo3.close();
 }
 
