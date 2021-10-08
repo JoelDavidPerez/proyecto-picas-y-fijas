@@ -4,6 +4,8 @@
 #include <iomanip>
 #include <time.h>
 #include <fstream>
+#include <windows.h>
+#include "MMSystem.h"
 
 using namespace std;
 
@@ -30,9 +32,16 @@ struct Usuario
 void crearAnadir();
 void ListasOrganizada();
 void crearAnadir2();
+void musica();
 
 int main()
 {
+	/*char soundfile[] = "C:\soundtrack_.wav";
+    cout<<PlaySound((LPCSTR)soundfile,NULL,SND_FILENAME | SND_ASYNC);
+
+    system("pause");*/
+    musica();
+
 	//añadir los carácteres especiales 
 	setlocale(LC_ALL, "");
 	//variables
@@ -101,7 +110,8 @@ int main()
 		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+";
 		cout<<"\n\t\t\t\t\t       |__|__|                +  Lilly Sofia Ayala Rojas                    |__|__|"; 
 		cout<<"\n\t\t\t\t\t       |__|__|                + Joel David Perez Arroyave                   |__|__|";
-		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+                    ";
+		cout<<"\n\t\t\t\t\t       |__|__|                + Maicol Steven Fagua Rojas                   |__|__|";
+		cout<<"\n\t\t\t\t\t       +-----------------++-----------------++-----------------++-----------------+";
 		cin>>opcion2;
 		while(opcion2 == 1){
 			system("cls");
@@ -217,6 +227,7 @@ int main()
 					int termino=0;
 					int num, n1, n2, n3, n4, contadorPicas, contadorFijas,j,temp;
 					int numero[4];
+					int intentos=0;
 					int intentosReinicioFor=0;
 
                     //numero aleatorio
@@ -333,6 +344,7 @@ int main()
 								cout<<"intentos: "<<intentos<<"\n\n";
 								cout<<"\t\t\t----------------8<---------------------------8<----------------";
 							}
+
 							for(int intentosFor=0;intentosReinicioFor==10;intentosFor++)
 							{
 								cout<<"\n\n\n\n\t\t\tquieres rendirte? ";
@@ -500,4 +512,11 @@ void ListasOrganizada()
 		cout<<tablero[z].Nombre<<tablero[z].intentosFin<<endl;
 	}
     archivo3.close();
+}
+
+void musica()
+{
+	char soundfile[] = "C:\soundtrack_.wav";
+    PlaySound((LPCSTR)soundfile,NULL,SND_FILENAME | SND_ASYNC);
+
 }
